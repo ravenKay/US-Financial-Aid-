@@ -21,7 +21,6 @@ from sklearn.feature_selection import RFECV
 
 
 #Load data
-#aid_data = pd.read_csv("~/Data_Science/capstone/data pulls/us_foreign_aid_complete.csv", low_memory = False, dtype= 'transaction_type_name':np.str)
 names = ['country_id',	'region_id',	'income_group_id',	'implementing_agency_id',	'implementing_subagency_id',	'channel_category_id',	'channel_subcategory_id',	'channel_id',	'dac_category_id',	'dac_sector_code',	'dac_purpose_code',	'funding_agency_id',	'assistance_category_id',	'aid_type_group_id',	'activity_id',	'activity_start_date',	'activity_end_date',	'transaction_type_id',	'fiscal_year',	'current_amount',	'constant_amount',	'USG_sector_id',	'submission_id']
 aid_data = pd.read_csv(r'us_foreign_aid_short.csv', names = names)
 missing_count = aid_data.isnull().sum()
